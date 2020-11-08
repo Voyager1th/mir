@@ -17,13 +17,13 @@
 			"iever": 8,
 			"osver": 6,
 			"auto": true,
-			"ico":"https://code.aliyun.com/EvilZ/mir/raw/master/skin/main.ico"
+			"ico":"https://raw.githubusercontent.com/ononlulu/mir/master/skin/main.ico"
 		}
 	},
 	"updates":{
 		"ver":8,
-		"info":"https://code.aliyun.com/EvilZ/mir/raw/master/clients.txt",
+		"info":"https://raw.githubusercontent.com/ononlulu/mir/master/clients.txt",
 		"sha1":"34d8aa96543c030e8add963197c3ca4f3c733802",
-		"path":"https://code.aliyun.com/EvilZ/mir/raw/master/"
+		"path":"https://raw.githubusercontent.com/ononlulu/mir/master/"
 	}
 }
