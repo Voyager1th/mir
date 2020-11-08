@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+:focus {
+  outline: 0; }
+
+a {
+  text-decoration: none; }
+
+a:hover img {
+  border: none; }
+
+/*清除浮动*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* End hide from IE-mac */
+/*png css hack for ie6*/
+
+
+/*Extra CSS File For Change on All The Websites*/
+/*@import url(http://www.changyou.com/styles/extra.css);*/
+/* 可对通用样式进行设置 */
+/* global */
+html {
+  overflow-x: hidden;
+  background-color: #c0c0bf; }
+
+body {
+  font-size: 12px;
+  font-family: "宋体";
+  line-height: 24px;
+  color: #333333;
+  min-width: 1000px;}
+
+body a {
+  color: #333333; }
+
+
+#page_all {
+  left bottom no-repeat; }
+
+#content {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 0px; }
+
+.sidebar {
+  width: 210px;
+  float: left;
+  margin-right: 11px;
+  /* .survey, */ }
+  .sidebar h3 {
+    width: 219px;
+    height: 36px;
+    color: #1e1c1c;
+    font-size: 16px;
+    line-height: 36px;
+    font-family: "微软雅黑";
+    text-align: center;
+    background-position: -226px -75px; }
+  .sidebar ul.side_list {
+    width: 214px;
+    height: 124px;
+    margin: 2px 2px 0 2px;
+    padding: 1px 0 0 1px;
+    background-position: -226px -116px; }
+    .sidebar ul.side_list li {
+      width: 70px;
+      height: 61px;
+      float: left;
+      margin: 0 1px 1px 0; }
+      .sidebar ul.side_list li a {
+        display: block;
+        width: 70px;
+        height: 25px;
+        padding-top: 36px;
+        text-align: center;
+        /* span{
+        	display: block;
+        	float: left;
+        	width: 16px;
+        	height: 15px;
+        	margin: 4px 3px 0 0;
+        	@include bg("disc.png");
+        }
+        &:hover span{
+        	@include bg("disc_hover.png");
+        } */ }
+        .sidebar ul.side_list li a:hover {
+          color: #b12b24; }
+        .sidebar ul.side_list li a.sl_1:hover {
+          background-position: -227px -247px; }
+        .sidebar ul.side_list li a.sl_2:hover {
+          background-position: -298px -247px; }
+        .sidebar ul.side_list li a.sl_3:hover {
+          background-position: -369px -247px; }
+        .sidebar ul.side_list li a.sl_4:hover {
+          background-position: -227px -309px; }
+        .sidebar ul.side_list li a.sl_5:hover {
+          background-position: -298px -309px; }
+        .sidebar ul.side_list li a.sl_6:hover {
+          background-position: -369px -309px; }
+  .sidebar .btns {
+    width: 222px;
+    height: 212px;
+    padding: 0px 0px 0 0px;
+    background-position:0px -526px;
+    margin: 0px 0px 0 0px;
+    position: relative; }
+
+    .sidebar .btns a {
+      float: left;
+      text-indent: -999em; }
+
+    .sidebar .btns a:hover {
+      background-position:-222px -526px;}
+
+
+
+      .sidebar .btns a.download_btn {
+        display: block;
+        width: 221px;
+        height: 110px;
+        background-position:0px -526px;}
+
+      .sidebar .btns a.download_btn:hover {
+        background-position: -222px -526px; }
+
+      .sidebar .btns a.code_btn {
+        display: block;
+        width: 221px;
+        height: 60px;
+        background-position: 0px -636px;}
+
+      .sidebar .btns a.code_btn:hover {
+          background-position: -222px -636px; }
+
+      .sidebar .btns a.register_btn {
+        display: block;
+        width: 110px;
+        height: 42px; }
+
+      .sidebar .btns a.register_btn:hover {
+          background-position: -222px -696px; }
+
+      .sidebar .btns a.active_btn {
+        position: relative;
+        display: block;
+        width: 111px;
+        height: 42px; }
+
+      .sidebar .btns a.active_btn:hover {
+          background-position: -332px -696px; }
+
+  .sidebar .sidergg {
+    width: 221px;
+    height: 175px;
+    margin-bottom: 0px; }
+    .sidebar .sidergg a {
+      display: block;
+      width: 221px;
+      height: 70px;
+      margin-bottom: 0px; }
+
+span#replaced {
+  width: 640px;
+  height: 365px;
+  display: block;
+  line-height: 360px;
+  text-align: center;
+  color: #fee900; }
+
+.main { width: 410px; height: 380px; float: left; }
+
+.news_box { width: 375px; height: 377px; float: left; overflow: hidden; padding: 9px 25px 0 12px; background-position: 0 0; position: relative; color: #f2efef; margin-bottom: 16px; }
+.news_box .imp_news { width: 100%; height: 106px; float: none; overflow: hidden; }
+.news_box .imp_news img { float: left; margin-right: 12px; }
+.news_box .imp_news p { line-height: 22px; }
+.news_box .imp_news p.news_title { height: 30px; line-height: 30px; color: #e31313; font-size: 14px; line-height: 24px; font-family: "微软雅黑"; text-align: center; cursor: pointer; }
+.news_box .imp_news a.details { display: block; width: 68px; height: 14px; color: #524e4e; line-height: 14px; position: absolute; left: 315px; top: 88px; }
+.news_box .imp_news a.details span { float: left; cursor: pointer; }
+.news_box .imp_news a.details span.jia { display: block; width: 12px; height: 12px; margin: 1px 0 0 5px; float: left; background-position: -423px -402px; overflow: hidden; }
+.news_box .imp_news a.details:hover, .news_box .imp_news a.details:hover span { text-decoration: underline; }
+.news_box .tabs { width: 100%; height: 35px; float: none; overflow: hidden; margin-top: 21px; background-position: 0 -391px; }
+.news_box .tabs li { width: 78px; height: 35px; float: left; overflow: hidden; }
+.news_box .tabs li a { display: block; width: 100%; height: 100%; color: #969191; font-size: 14px; line-height: 35px; font-family: "微软雅黑"; text-align: center; }
+.news_box .tabs li a:hover, .news_box .tabs li a.current { color: #f8eeee; background-color: #661616; }
+.news_box .newscont { width: 100%; height: 203px; float: none; overflow: hidden; padding-top: 5px; display: none; }
+.news_box .newscont li { width: 100%; height: 28px; float: none; overflow: hidden; border-bottom: 1px dashed #3f3e3e; line-height: 28px; color: #f2f1f1; }
+.news_box .newscont li .time { float: right; }
+.news_box .newscont li a { color: #f2f1f1; }
+.news_box .newscont li a:hover { color: #ca0404; }
+.news_box .newscont li a.impnews { color: #e31313; }
+.news_box .newscont a.more { display: block; width: 78px; height: 35px; color: #969191; font-size: 14px; line-height: 35px;font-family: "微软雅黑"; text-indent: 10px; background-position: -395px -391px; position: absolute; left: 324px; top: 136px; }
+.news_box .newscont a.more:hover { text-decoration: underline; }
+
+.rightbar{
+    width:165px;
+    height:386px;
+    float: left;
+    margin: 0px 0px 0 0px;
+    background-position: -425px 0px;
+    position: relative; }
+
+.rightbar .serverlst {
+    width: 165px;
+    height: 386px;
+    padding: 8px 2px 0 0px;
+    margin: 0px 0px 0 0px;
+    position: relative; }
+    .rightbar .serverlst a {
+      float: left;
+      text-indent: 1em;
+      font-weight: bold;
+      text-align:center;
+      color:#FFA500;
+      font-size:120%;
+      background-position: -444px -580px;}
+
+    .rightbar .serverlst a:hover {
+      background-position: -444px -526px; }
+
+    .rightbar .serverlst a.head_btn {
+        display: block;
+        width: 159px;
+        height: 38px;
+        margin: 1px 0px 1px 2px;
+        padding: 1px -1px 0 0px;
+        background-position: -160px -473px;}
+
+    .rightbar .serverlst a.head_btn:hover {
+        display: block;
+        width: 159px;
+        height: 38px;
+        margin: 1px 0px 1px 2px;
+        padding: 1px -1px 0 0px;
+        background-position: -160px -430px; }
+
+    .rightbar .serverlst a.item_btn {
+        display: block;
+        width: 159px;
+        height: 27px;
+        margin: 1px 0px 1px 3px;
+        padding: 1px -1px 0 0px;
+        background-position: -444px -580px; }
+
+    .rightbar .serverlst a.item_btn:hover {
+        display: block;
+        width: 159px;
+        height: 27px;
+        margin: 1px 0px 1px 4px;
+        padding: 1px -1px 0 0px;
+        background-position: -444px -526px; }
+
+    .rightbar .serverlst a.item_light_btn {
+        display: block;
+        width: 159px;
+        height: 27px;
+        margin: 1px 0px 1px 3px;
+        padding: 1px -1px 0 0px;
+        background-position: -444px -526px;}
+
+    .rightbar .serverlst a.item_light_btn:hover {
+        display: block;
+        width: 159px;
+        height: 27px;
+        margin: 1px 0px 1px 4px;
+        padding: 1px -1px 0 0px;
+        background-position: -444px -526px;}
+        .rightbar .serverlst a.item_select_btn {
+        display: block;
+        width: 159px;
+        height: 27px;
+        margin: 1px 0px 1px 3px;
+        padding: 1px -1px 0 0px;
+        background-position: -444px -607px;}
+
+    .rightbar .serverlst a.item_select_btn:hover {
+        display: block;
+        width: 159px;
+        height: 27px;
+        margin: 1px 0px 1px 4px;
+        padding: 1px -1px 0 0px;
+        background-position: -444px -553px;}
+
+    .rightbar ul.side_list {
+    width: 214px;
+    height: 124px;
+    margin: 2px 2px 0 2px;
+    padding: 1px 0 0 1px;
+    background-position: -226px -116px; }
+
+
+
+.frame_box { width: 521px; height: 161px; float: left; overflow: hidden; margin-right: 20px; background-color: #2a2a2a; }
+
+
+#currAccordin ul {
+  padding: 90px 0 0 52px;
+  height: 114px; }
+  #currAccordin ul li {
+    width: 96px; }
+
+#secAccordin ul {
+  padding: 90px 0 0 52px;
+  height: 114px; }
+
+
+span#replaced {
+  width: 640px;
+  height: 365px;
+  display: block;
+  line-height: 360px;
+  text-align: center;
+  color: #fee900; }

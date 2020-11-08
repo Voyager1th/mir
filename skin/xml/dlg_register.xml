@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<dlg name="dlg_register" title="" width="380" height="308" resize="0"	frame="" bkimg="" crbk="000000"
+	shadow-size="3" >
+	
+	<base>
+		<imgbtn name="button.close" pos="-45,0,-0,29" skin="IDB_BT_CLOSE" shortcut="ESC" />
+		<text name="title" crtext="FF700000" font="big" pos="10,5,200,25" title="账号注册" response="0" />
+	</base>
+
+	<body>
+		<area name="area-1" pos="0,0,-0,140" begin-transparent="100" end-transparent="40" />
+		<area name="area-2" pos="0,140,-0,-0" begin-transparent="40" end-transparent="40" />
+		<area name="area-3" pos="0,-37,-0,-36" begin-transparent="70" end-transparent="70" />
+		<area name="area-4" pos="0,-36,-0,-0" begin-transparent="88" end-transparent="88" />
+		
+		<text crtext="99CC00" pos="20,50,200,70" font="bold" title="请输入注册信息" />
+		
+		<text crtext="202020" pos="50,80,130,100" title="账号：" />
+		<edit name="reg.account" skin="IDB_EDIT" left-image="skin:IDB_EDIT_USER"
+					pos="90,77" width="200" height="26" title="" tip="输入你要注册的账号,仅支持英文"
+					multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+		<text crtext="202020" pos="50,120,130,140" title="密码：" />
+		<edit name="reg.password1" skin="IDB_EDIT" left-image="skin:IDB_EDIT_PWD"
+					pos="90,115" width="200" height="26" title="" tip="输入你的密码，请不要使用简单密码"
+					multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16" password="1"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+		<text crtext="202020" pos="50,160,130,180" title="校验：" />
+		<edit name="reg.password2" skin="IDB_EDIT" left-image="skin:IDB_EDIT_PWD"
+					pos="90,155" width="200" height="26" title="" tip="请再次输入密码，与上一行进行校验是否不一致"
+					multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16" password="1"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+		<text crtext="202020" pos="50,200,130,220" title="电话：" />
+		<edit name="reg.phone" skin="IDB_EDIT" left-image="skin:IDB_COMPUTER"
+					pos="90,195" width="200" height="26" title="" tip="请输入你的电话，以便找回密码"
+					multiline="0" autohscroll="1" autovscroll="0" number="1" readonly="0" maxchar="11" password="0"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+		<text crtext="808080" pos="38,240,130,260" title="验证码：" />
+		<button name="reg.verify" pos="90,235,190,260" skin="IDB_BT_GREEN" title="点击刷新"
+				crtext="FFD700" animate="1" maxindex="16" font="strikeout" />
+
+		<text crtext="202020" pos="38,280,130,300" title="验证码：" />
+		<edit name="reg.verifycode" skin="IDB_EDIT" left-image="skin:IDB_KEY_BOARD"
+					pos="90,275" width="160" height="26" title="" tip="请输入上面的 [数字] 标点符号除外"
+					multiline="0" autohscroll="1" autovscroll="0" number="1" readonly="0" maxchar="4"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+		<img pos="20,111,-20,112" skin="IDB_LINE" mode="extrude" framesize="0" />
+
+		<button name="reg.button.ok" skin="IDB_BT_DEFAULT" title="开始注册" pos="-115,-32,-50,-8" shortcut="RETURN" />
+
+	</body>
+  
+</dlg>

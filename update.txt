@@ -1,0 +1,29 @@
+{
+	"servers": {
+		"全国线路": "43.240.73.152,17000",
+		"全国一线": "43.240.73.152,17000",
+		"全国二线": "43.240.73.152,17000",
+		"全国三路": "43.241.18.36,17000",
+		"全国四线": "43.241.18.36,47003"
+	},
+	"downloads": {
+		"IE8": {
+			"ver": "8.0",
+			"size": 16901472,
+			"crc": 506255681,
+			"desc": "IE8 更新，解决IE6无法正常显示界面的问题",
+			"url": "http://download.microsoft.com/download/1/6/1/16174D37-73C1-4F76-A305-902E9D32BAC9/IE8-WindowsXP-x86-CHS.exe",
+			"path": "",
+			"iever": 8,
+			"osver": 6,
+			"auto": true,
+			"ico":"https://code.aliyun.com/EvilZ/mir/raw/master/skin/main.ico"
+		}
+	},
+	"updates":{
+		"ver":8,
+		"info":"https://code.aliyun.com/EvilZ/mir/raw/master/clients.txt",
+		"sha1":"34d8aa96543c030e8add963197c3ca4f3c733802",
+		"path":"https://code.aliyun.com/EvilZ/mir/raw/master/"
+	}
+}

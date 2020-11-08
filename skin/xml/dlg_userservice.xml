@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<dlg name="dlg_userservice" title="" width="380" height="350" resize="0"	frame="" bkimg="" crbk="000000"
+	shadow-size="3" >
+	
+	<base>
+		<imgbtn name="button.close" pos="-45,0,-0,29" skin="IDB_BT_CLOSE" shortcut="ESC" />
+		<text name="title" crtext="FF700000" font="big" pos="10,5,200,25" title="用户服务" response="0" />
+	</base>
+
+	<body>
+		<area name="area-1" pos="0,0,-0,140" begin-transparent="100" end-transparent="40" />
+		<area name="area-2" pos="0,140,-0,-0" begin-transparent="40" end-transparent="40" />
+		<area name="area-3" pos="0,-27,-0,-26" begin-transparent="70" end-transparent="70" />
+		<area name="area-4" pos="0,-26,-0,-0" begin-transparent="88" end-transparent="88" />
+
+		<tabctrl name="tabctrl.main"
+			img-sep="skin:IDB_TAB_SEPERATOR" img-hover="skin:IDB_TAB_HOVER"
+			font="bold" item-width="0" tab-height="30" tab-left-pading="0" animate="1"
+			pos="1,30,-1,-25">
+			<tab name="tab.passwordservice" title="修改密码"  active="true" pos="0,30,-0,-0">
+
+				<text crtext="99CC00" pos="20,10,200,30" font="bold" title="请输入账号信息" />
+
+				<text crtext="202020" pos="50,40,130,60" title="账号名：" />
+				<edit name="chg.account" skin="IDB_EDIT" left-image="skin:IDB_EDIT_USER"
+							pos="100,37" width="200" height="26" title="" tip="输入你的账号,仅支持英文"
+							multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<text crtext="202020" pos="50,80,130,100" title="旧密码：" />
+				<edit name="chg.password" skin="IDB_EDIT" left-image="skin:IDB_EDIT_PWD"
+							pos="100,75" width="200" height="26" title="" tip="输入你当前的密码"
+							multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16" password="1"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<text crtext="202020" pos="50,120,130,140" title="新密码：" />
+				<edit name="chg.password1" skin="IDB_EDIT" left-image="skin:IDB_EDIT_PWD"
+							pos="100,115" width="200" height="26" title="" tip="请输入新的密码"
+							multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16" password="1"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<text crtext="202020" pos="50,160,130,180" title="新密码：" />
+				<edit name="chg.password2" skin="IDB_EDIT" left-image="skin:IDB_EDIT_PWD"
+							pos="100,155" width="200" height="26" title="" tip="请再次输入密码，与上一行进行校验是否不一致"
+							multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16" password="1"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<text crtext="808080" pos="50,200,130,220" title="验证码：" />
+				<button name="chg.verify" pos="100,195,190,220" skin="IDB_BT_GREEN" title="点击刷新"
+						crtext="FFD700" animate="1" maxindex="16" font="strikeout" />
+
+				<text crtext="202020" pos="50,240,130,260" title="验证码：" />
+				<edit name="chg.verifycode" skin="IDB_EDIT" left-image="skin:IDB_KEY_BOARD"
+							pos="100,235" width="160" height="26" title="" tip="请输入上面的 [数字] 标点符号除外"
+							multiline="0" autohscroll="1" autovscroll="0" number="1" readonly="0" maxchar="4"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<img pos="20,111,-20,112" skin="IDB_LINE" mode="extrude" framesize="0" />
+
+				<button name="chg.button.ok" skin="IDB_BT_DEFAULT" title="修改密码" pos="-115,235,-50,261" shortcut="RETURN" />
+			</tab>
+			<tab name="tab.accountservice" title="账号找回"  active="false" pos="0,30,-0,-0" >
+				<text crtext="99CC00" pos="20,10,200,30" font="bold" title="请输入账户信息" />
+				<text crtext="202020" pos="50,40,130,60" title="账号名：" />
+				<edit name="upd.account" skin="IDB_EDIT" left-image="skin:IDB_EDIT_USER"
+							pos="100,37" width="200" height="26" title="" tip="输入你的账号,仅支持英文"
+							multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<text crtext="202020" pos="50,80,130,100" title="手机号：" />
+				<edit name="upd.phone" skin="IDB_EDIT" left-image="skin:IDB_COMPUTER"
+							pos="100,75" width="200" height="26" title="" tip="输入你注册时使用的手机号"
+							multiline="0" autohscroll="1" autovscroll="0" number="1" readonly="0" maxchar="11" password="0"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<text crtext="202020" pos="50,120,130,140" title="新密码：" />
+				<edit name="upd.password1" skin="IDB_EDIT" left-image="skin:IDB_EDIT_PWD"
+							pos="100,115" width="200" height="26" title="" tip="请输入新的密码"
+							multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16" password="1"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<text crtext="202020" pos="50,160,130,180" title="新密码：" />
+				<edit name="upd.password2" skin="IDB_EDIT" left-image="skin:IDB_EDIT_PWD"
+							pos="100,155" width="200" height="26" title="" tip="请再次输入密码，与上一行进行校验是否不一致"
+							multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="16" password="1"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<text crtext="808080" pos="50,200,130,220" title="验证码：" />
+				<button name="upd.verify" pos="100,195,190,220" skin="IDB_BT_GREEN" title="点击刷新"
+						crtext="FFD700" animate="1" maxindex="16" font="strikeout" />
+
+				<text crtext="202020" pos="50,240,130,260" title="验证码：" />
+				<edit name="upd.verifycode" skin="IDB_EDIT" left-image="skin:IDB_KEY_BOARD"
+							pos="100,235" width="160" height="26" title="" tip="请输入上面的 [数字] 标点符号除外"
+							multiline="0" autohscroll="1" autovscroll="0" number="1" readonly="0" maxchar="4"
+							font="default" crtext="0,0,0" crtip="128,128,128,128" />
+
+				<img pos="20,111,-20,112" skin="IDB_LINE" mode="extrude" framesize="0" />
+
+				<button name="upd.button.ok" skin="IDB_BT_DEFAULT" title="更新密码" pos="-115,235,-50,261" shortcut="RETURN" />
+			</tab>
+			<tab name="tab.userservice" title="联系客服"  active="false" pos="0,30,-0,-0" >
+				<text crtext="99CC00" pos="20,10,200,30" font="bold" title="请使用微信扫码，添加客服微信" />
+			</tab>
+		</tabctrl>
+	</body>
+  
+</dlg>

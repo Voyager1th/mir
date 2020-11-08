@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+<!--系统配置-->
+<res type="cfg" name="defaultStyle" value="" />
+<res type="cfg" name="logfile" value="Mir.log" />
+<res type="cfg" name="loglevel" value="1" />
+<res type="cfg" name="appMutex" value="MUTEX_LEGEND_OF_MIR3" />
+<res type="cfg" name="enableDragFile" value="1" />
+<res type="cfg" name="trayDbClickMsg" value="0" />
+
+<!--风格设置-->
+<res type="style" name="default" value="" />
+
+<!--XML资源-->
+<res type="res" lang="zh-cn" file="skin\xml\def_string_zh-cn.xml" />
+<res type="res" lang="en-us" file="skin\xml\def_string_en-us.xml" />
+
+<!--XML资源-默认风格-->
+<res type="xml" name="dlg_main" file="skin\xml\dlg_main.xml" />
+<res type="xml" name="dlg_skin" file="skin\xml\dlg_skin.xml"  />
+<res type="xml" name="dlg_notifymsg" file="skin\xml\dlg_notifymsg.xml"  />
+<res type="xml" name="dlg_msgbox" file="skin\xml\dlg_msgbox.xml"  />
+
+<res type="xml" name="dlg_login" file="skin\xml\dlg_login.xml"  />
+<res type="xml" name="dlg_about" file="skin\xml\dlg_about.xml"  />
+<res type="xml" name="dlg_option" file="skin\xml\dlg_option.xml"  />
+<res type="xml" name="dlg_register" file="skin\xml\dlg_register.xml"  />
+<res type="xml" name="dlg_userservice" file="skin\xml\dlg_userservice.xml"  />
+
+<res type="xml" name="menu_main" file="skin\xml\menu_main.xml"  />
+<res type="xml" name="menu_state" file="skin\xml\menu_state.xml"  />
+<res type="xml" name="menu_tray" file="skin\xml\menu_tray.xml"  />
+
+<!--字体资源-->
+<res type="font" lang="zh-cn" name="default" font="微软雅黑" size="12" bold="false" />
+<res type="font" lang="zh-cn" name="default" font="新宋体" size="11" bold="false" os="winxp,win2003" />
+<res type="font" lang="zh-cn" name="bold" font="微软雅黑" size="12" bold="true" />
+<res type="font" lang="zh-cn" name="bold" font="新宋体" size="11" bold="true" os="winxp,win2003" />
+<res type="font" lang="zh-cn" name="big" font="微软雅黑" size="14" bold="true" italic="false" underline="false" strikeout="false" />
+<res type="font" lang="zh-cn" name="big" font="新宋体" size="14" bold="true" os="winxp,win2003" />
+<res type="font" lang="zh-cn" name="bigbig" font="微软雅黑" size="18" />
+<res type="font" lang="zh-cn" name="bigbig" font="新宋体" size="18" bold="true" os="winxp,win2003" />
+
+<!--图片资源-默认风格-->
+<res type="img" name="IDB_TRAY_ICON" file="skin\Main.ico" />
+<res type="img" name="IDB_MAIN_FRAME" file="skin\images\default\WindowsBack.png" />
+<res type="img" name="IDB_BT_CLOSE" file="skin\images\default\BT_CLOSE.png" />
+<res type="img" name="IDB_BT_MIN" file="skin\images\default\BT_MIN.png" />
+<res type="img" name="IDB_BT_MENU" file="skin\images\default\BT_MENU.png" />
+<res type="img" name="IDB_BT_SKIN" file="skin\images\default\BT_SKIN.png" />
+<res type="img" name="IDB_BT_SETUP" file="skin\images\default\BT_SETUP.png" />
+<res type="img" name="IDB_BT_DEFAULT" file="skin\images\default\BT_DEFAULT.png" />
+<res type="img" name="IDB_BT_ICON" file="skin\images\default\BT_ICON.png" />
+<res type="img" name="IDB_BT_GREEN" file="skin\images\default\BT_GREEN.png" />
+<res type="img" name="IDB_BT_CANCEL" file="skin\images\default\BT_CANCEL.png" />
+<res type="img" name="IDB_CHECK_BOX" file="skin\images\default\CHECK_BOX.png" />
+<res type="img" name="IDB_RADIO_BUTTON" file="skin\images\default\RADIO_BUTTON.png" />
+<res type="img" name="IDB_EDIT" file="skin\images\default\EDIT.png" />
+<res type="img" name="IDB_COMBO_ITEM" file="skin\images\default\COMBO_ITEM.png" />
+<res type="img" name="IDB_COMBO_ITEM_CLOSE" file="skin\images\default\COMBO_ITEM_CLOSE.png" />
+<res type="img" name="IDB_PROGRESS" file="skin\images\default\Progress.png" />
+<res type="img" name="IDB_PROGRESS_GREEN_BACK" file="skin\images\default\progress_background_icon.png" />
+<res type="img" name="IDB_PROGRESS_GREEN_FORE" file="skin\images\default\progress_foreground_icon.png" />
+<res type="img" name="IDB_SCROLL_V" file="skin\images\default\SCROLL_V.png" />
+<res type="img" name="IDB_SCROLL_H" file="skin\images\default\SCROLL_H.png" />
+<res type="img" name="IDB_BT_SCROLL_UP" file="skin\images\default\BT_SCROLL_UP.png" />
+<res type="img" name="IDB_BT_SCROLL_DOWN" file="skin\images\default\BT_SCROLL_DOWN.png" />
+<res type="img" name="IDB_TAB_SEPERATOR" file="skin\images\default\Tab_seperator.png" />
+<res type="img" name="IDB_TAB_ITEM" file="skin\images\default\tab.png" />
+<res type="img" name="IDB_TAB_BACK" file="skin\images\default\tab_background.png" />
+<res type="img" name="IDB_TAB_HOVER" file="skin\images\default\toolbar_hover.png" />
+<res type="img" name="IDB_LIST_IMG" file="skin\images\default\list_img.png" />
+<res type="img" name="IDB_MSGDLG_BK" file="skin\images\default\msgdlg_bk.png" />
+<res type="img" name="IDB_TREE_COLLAPSE" file="skin\images\default\tree_collapse.png" />
+<res type="img" name="IDB_TREE_TOGGLE" file="skin\images\default\tree_toggle.png" />
+<res type="img" name="IDB_TREE_CHECKBOX" file="skin\images\default\tree_checkbox.png" />
+<res type="img" name="IDB_TREE_ICON" file="skin\images\default\tree_icon.png" />
+<res type="img" name="IDB_BT_SKIN_CUSTOMIZE" file="skin\images\default\BT_SKIN_CUSTOMIZE.png" />
+<res type="img" name="IDB_BT_SKIN_IMAGE" file="skin\images\default\BT_SKIN_IMAGE.png" />
+<res type="img" name="IDB_BT_SKIN_COLOR" file="skin\images\default\BT_SKIN_COLOR.png" />
+<res type="img" name="IDB_SKIN_PUSHED_BKG" file="skin\images\default\SkinPushedBkg.png" />
+<res type="img" name="IDB_SKIN_BKG" file="skin\images\default\SkinBkg.png" />
+<res type="img" name="IDB_DROP_DOWN" file="skin\images\default\BT_DROP_DOWN.png" />
+<res type="img" name="IDB_KEY_BOARD" file="skin\images\default\BT_KEY_BOARD.png" />
+<res type="img" name="IDB_EDIT_USER" file="skin\images\simage\edit_user.png" />
+<res type="img" name="IDB_COMPUTER" file="skin\images\simage\computer.png" />
+<res type="img" name="IDB_EDIT_PWD" file="skin\images\simage\password.png" />
+<res type="img" name="IDB_LINE_RP" file="skin\images\default\rp_line.png" />
+<res type="img" name="IDB_WINBACK_SHADOW" file="skin\images\default\winback_shadow.png" />
+<res type="img" name="IDB_WINDOW_SHADOW" file="skin\images\default\window_shadow.png" />
+<res type="img" name="IDB_SPLIT_HORI" file="skin\images\default\split_hori.png" />
+<res type="img" name="IDB_SPLIT_VERT" file="skin\images\default\split_vert.png" />
+<res type="img" name="IDB_SPLIT_THUMB_HORI" file="skin\images\default\split_thumb_hori.jpg" />
+<res type="img" name="IDB_SPLIT_THUMB_VERT" file="skin\images\default\split_thumb_vert.jpg" />
+<res type="img" name="IDB_TOOLBAR_BG" file="skin\images\default\toolbar_bg.png" />
+<res type="img" name="IDB_START_GAME" file="skin\images\button\BT_START.png" />
+<res type="img" name="IDB_DOWN_LOAD" file="skin\images\button\BT_DLOAD.png" />
+<res type="img" name="IDB_SERVER_LIST" file="skin\images\button\BT_SERVER.png" />
+<res type="img" name="IDB_SHOW_WEB" file="skin\images\button\BT_WEB.png" />
+<res type="img" name="IDB_BUTTON_RED" file="skin\images\button\BT_RED.png"/>
+<res type="img" name="IDB_MENU_BACK" file="skin\images\menu\menu_bkg.png" />
+<res type="img" name="IDB_MENU_SEP" file="skin\images\menu\menu_sep.png" />
+<res type="img" name="IDB_MENU_ARROW" file="skin\images\menu\menu_arrow.png" />
+
+<res type="img" name="SKIN_PIC_0" file="skin\images\bkimg\SKIN_PIC_0.png" />
+<res type="img" name="SKIN_PIC_1" file="skin\images\bkimg\SKIN_PIC_1.png" />
+<res type="img" name="SKIN_PIC_2" file="skin\images\bkimg\SKIN_PIC_2.png" />
+<res type="img" name="SKIN_PIC_3" file="skin\images\bkimg\SKIN_PIC_3.png" />
+<res type="img" name="SKIN_PIC_4" file="skin\images\bkimg\SKIN_PIC_4.png" />
+<res type="img" name="SKIN_PIC_5" file="skin\images\bkimg\SKIN_PIC_5.png" />
+<res type="img" name="SKIN_PIC_6" file="skin\images\bkimg\SKIN_PIC_6.png" />
+<res type="img" name="SKIN_PIC_7" file="skin\images\bkimg\SKIN_PIC_7.png" />
+<res type="img" name="SKIN_PIC_8" file="skin\images\bkimg\SKIN_PIC_8.png" />
+
+<res type="img" name="IDB_ICON_CHECK" file="skin\images\image\icon_check.png" />
+<res type="img" name="IDB_ICON_INFO" file="skin\images\image\icon_info.png" />
+<res type="img" name="IDB_ICON_QUESTION" file="skin\images\image\icon_question.png" />
+<res type="img" name="IDB_ICON_WARN" file="skin\images\image\icon_warning.png" />
+<res type="img" name="IDB_ICON_ERROR" file="skin\images\image\icon_error.png" />
+
+<res type="img" name="IDB_MENU_UPDATE" file="skin\images\menu\MENU_UPDATE.png" />
+<res type="img" name="IDB_MENU_AUTH" file="skin\images\menu\MENU_AUTH.png" />
+<res type="img" name="IDB_MENU_HELP" file="skin\images\menu\MENU_HELP.png" />
+<res type="img" name="IDB_MENU_SETUP" file="skin\images\menu\MENU_SETUP.png" />
+
+<res type="img" name="IDB_SCAN_ANIMATE" file="skin\images\default\scan_animate.png" />
+<res type="img" name="IDB_NUMBER_SAFE" file="skin\images\default\SefaNumber.png" />
+<res type="img" name="IDB_NUMBER_DANGER" file="skin\images\default\DangerNumber.png" />
+<res type="img" name="IDB_NUMBER_HINT" file="skin\images\default\HintNumber.png" />
+<res type="img" name="IDB_NUMBER_WHITE" file="skin\images\default\WhiteNumber.png" />
+
+<res type="img" name="IDB_LOGIN_USER" file="skin\images\im\HEAD_101.png" />
+
+<res type="img" name="IDB_LOGO" file="skin\images\default\logo.png" />
+
+<res type="img" name="LOGIN_HEAD" file="skin\images\default\Login_head.png" />
+
+<!--状态资源-->
+<res type="img" name="IDB_ONLINE" file="skin\images\im\state\status_online.png" />
+<res type="img" name="IDB_QME" file="skin\images\im\state\status_qme.png" />
+<res type="img" name="IDB_LEAVE" file="skin\images\im\state\status_leave.png" />
+<res type="img" name="IDB_BUSY" file="skin\images\im\state\status_busy.png" />
+<res type="img" name="IDB_INVISIBLE" file="skin\images\im\state\status_invisible.png" />
+
+
+
+<!--字符串资源-->
+<res type="str" lang="zh-cn" name="APP_NAME" value="Legend Of MirⅢ" />
+<res type="str" lang="zh-cn" name="APP_VER" value="1.0.0.1" />
+<res type="str" lang="zh-cn" name="OK" value="确定" />
+<res type="str" lang="zh-cn" name="CANCEL" value="放弃" />
+<res type="str" lang="zh-cn" name="YES" value="是" />
+<res type="str" lang="zh-cn" name="NO" value="否" />
+<res type="str" lang="zh-cn" name="LOGIN" value="登录" />
+
+</root>

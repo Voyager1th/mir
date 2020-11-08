@@ -1,0 +1,55 @@
+[{
+	"url": "http://bbs.521cq3.com/?t/2.html",
+	"clr1": "#aeae00",
+	"head": "[新闻]",
+	"tips": "4月17日正式公测,9月20日内侧",
+	"clr2": "#ffff00",
+	"content": "【521传奇】9月20日正式公测,9月20日内侧",
+	"clr3": "afeafe",
+	"date": "(4-04)"
+}, {
+	"url": "http://bbs.521cq3.com/",
+	"clr1": "afaeae",
+	"head": "[新闻]",
+	"tips": "新区横空出世！4月17日欢迎来战！",
+	"clr2": "fffff",
+	"content": "2020新年巨献《开天辟地》新区横空出世！",
+	"clr3": "afeafe",
+	"date": "(4-04)"
+}, {
+	"url": "http://bbs.521cq3.com/",
+	"clr1": "afaeae",
+	"head": "[新闻]",
+	"tips": "严厉打击用外挂软件挂机打怪",
+	"clr2": "fffff",
+	"content": "严厉打击用外挂软件挂机打怪",
+	"clr3": "afeafe",
+	"date": "(4-04)"
+}, {
+	"url": "http://bbs.521cq3.com/",
+	"clr1": "afaeae",
+	"head": "[新闻]",
+	"tips": "游戏圈各种不攻自破的谣言",
+	"clr2": "fffff",
+	"content": "游戏圈各种不攻自破的谣言",
+	"clr3": "afeafe",
+	"date": "(4-04)"
+}, {
+	"url": "http://bbs.521cq3.com/",
+	"clr1": "afaeae",
+	"head": "[新闻]",
+	"tips": "船任务",
+	"clr2": "fffff",
+	"content": "船任务",
+	"clr3": "afeafe",
+	"date": "(4-04)"
+}, {
+	"url": "http://bbs.521cq3.com/",
+	"clr1": "afaeae",
+	"head": "[新闻]",
+	"tips": "一个传奇3老玩家的心声",
+	"clr2": "fffff",
+	"content": "一个传奇3老玩家的心声",
+	"clr3": "afeafe",
+	"date": "(4-04)"
+}]

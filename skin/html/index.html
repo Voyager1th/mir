@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<title>传奇3</title>
+<meta content="传奇3私服" name="description" />
+<meta content="传奇3" name="Copyright" />
+<meta content="www.mir3.org" name="author" />
+<meta content="*" http-equiv="Access-Control-Allow-Origin" />
+	<script charset="utf-8" language="JavaScript" type="text/javascript">
+		var wwwroot='file://'+ window.external.wwwroot;
+		var webroot='http://www.521cq3.com/';
+		var couldpath=window.external.newspath;
+
+		var url_news = couldpath+'news.txt';
+		var url_noteices = couldpath+'noteices.txt';
+		var url_activities = couldpath+'activities.txt';
+		var url_whatsnews = couldpath+'whatsnews.txt';
+
+		var  strcss = '<style>.sidebar .btns,.sidebar .btns a:hover,.rightbar,.rightbar .serverlst a,.news_box,.tabs,.newscont.more,.imp_news a.details span.jia,.num a,#currAccordin { background:url("';
+		strcss += wwwroot;
+		strcss += 'images/sprite.jpg';
+		strcss += '") center top no-repeat; }\r\n';
+		strcss += '#bg {background: url("';
+		strcss += wwwroot;
+		strcss += 'images/bg.png';
+		strcss += '") left top no-repeat; }\r\n';
+		strcss += '* html img.png { _background-image: expression(this.runtimeStyle.backgroundImage = "none",this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'" + this.src + "\', sizingMethod=\'image\')",this.src = "';
+		strcss += wwwroot;
+		strcss += 'images/opacity.gif"); }';
+		strcss += '</style><link type="text/css" rel="stylesheet" href="';
+		strcss += wwwroot;
+		strcss += 'css/common.css';
+		strcss += '" />';
+
+		document.write(strcss);
+
+		function onSelectItem(svrid)
+		{
+			$('.item_select_btn').each(function(i)
+			{
+        		$(this).removeClass('item_select_btn');
+				$(this).addClass('item_btn');
+ 			});
+ 			var sid = 'svritem';
+ 			sid = sid+svrid.toString();
+ 			var item=document.getElementById(sid);
+ 			item.className='item_select_btn';
+ 			window.external.selectserver(svrid);
+		};
+		function clrserverlst()
+		{
+			var div = document.getElementById('serverlstitem');
+    		while(div.hasChildNodes()) //当div下还存在子节点时 循环继续
+    		{
+    			div.removeChild(div.firstChild);
+    		}
+		}
+
+		function onserverlst(srvlst)
+		{
+			var srlst = eval('(' + srvlst + ')');
+			clrserverlst();
+
+			var shtm='';
+			for(var i in srlst)
+			{
+				shtm+='<li><a href="javascript:void(0)" id="svritem';
+				shtm+=srlst[i].id;
+				shtm+='" onclick="onSelectItem(';
+				shtm+=i.toString();
+				shtm+=')" target="_self" title="';
+				shtm+=srlst[i].name;
+				shtm+='" class="item_btn">';
+				shtm+=srlst[i].name;
+				shtm+='</a></li>';
+			}
+			var div=document.getElementById('serverlstitem');
+			div.innerHTML=shtm;
+		}
+
+		function MakeNewsTable(data,tid)
+		{
+			var shtm='<table border="0" cellpadding="0" cellspacing="0" width="100%">';
+			var root = eval('(' + data + ')');
+			for(var i in root)
+			{
+				shtm += '<tr><td width="20" valign="center" align="center" height="20"><font style="font-size:9pt"><img src="';
+				shtm += wwwroot+'/images/icon/005.gif';
+				shtm +='" align="absmiddle" border="0" data-bd-imgshare-binded="1"></font></td><td height="20"><a href="';
+				shtm +=root[i].url;//链接
+				shtm +='" target="_blank"><font color="';
+				shtm +=root[i].clr1;//颜色
+				shtm +='" style="font-size:9pt">';
+				shtm +=root[i].head;
+				shtm +='</font></a>&nbsp;<a href="';
+				shtm +=root[i].url;//连接
+				shtm +='" target="_blank" title="';
+				shtm +=root[i].tips;//提示
+				shtm +='"><font color="';
+				shtm +=root[i].clr2;//颜色
+				shtm +='" style="font-size:9pt;  ">';
+				shtm +=root[i].content;//内容
+				shtm +='</font></a></td><td align="right"><font color="';
+				shtm +=root[i].clr3;//颜色
+				shtm +='" style="font-size:9pt">';
+				shtm +=root[i].date;//日期
+				shtm +='</font></td>';
+			}
+			shtm +='</table>';
+			var elm = document.getElementById(tid);
+			elm.innerHTML = shtm;
+		}
+
+		function fillnewshtml(tid,url)
+		{
+			var shtml = window.external.getstring(url,'MakeNewsTable',tid);
+		}
+
+		function delayfillnews()
+		{
+			fillnewshtml('tab_noteices',url_noteices);
+			fillnewshtml('tab_news',url_news);
+			fillnewshtml('tab_activities',url_activities);
+			fillnewshtml('tab_update',url_whatsnews);
+		}
+		function onMore()
+		{
+			window.external.exec(window.external.moreurl);
+		}
+	</script>
+</head>
+<div id="page_all">
+	<div id="bg">
+		<div class="clearfix" id="content">
+			<div class="sidebar">
+				<div class="btns">
+					<a class="download_btn" href="javascript:void(0)" onclick="window.external.DownloadGame()" target="_self" title="下载游戏">下载游戏</a>
+					<a class="code_btn" href="javascript:void(0)" onclick="window.external.Payment()" target="_self" title="在线充值">在线充值</a>
+					<a class="register_btn" href="javascript:void(0)" onclick="window.external.RegisterAccount()" target="_self" title="账号注册">账号注册</a>
+					<a class="active_btn" href="javascript:void(0)" onclick="window.external.UserService()" target="_self" title="客服中心">客服中心</a>
+                </div>
+				<div class="sidergg">
+					<script charset="utf-8" language="JavaScript" type="text/javascript">
+						var shtm = '<a class="sidergg2" href="'+window.external.adsurl+'" target="_blank" title="'+window.external.adstext+'"><img alt="'+window.external.adstext+'" height="74" src="';
+						shtm+=wwwroot;
+						shtm+='images/Yhmir3hz.jpg" width="221"></a>';
+						document.write(shtm);
+					</script>
+				</div>
+			</div>
+			<div class="main">
+
+				<div class="news_box">
+					<div class="imp_news">
+						<script charset="utf-8" language="JavaScript" type="text/javascript">
+							var shtm = '<img src="';
+							shtm+=wwwroot;
+							shtm+='images/stu2.jpg">';
+					   		document.write(shtm);
+					   	</script>
+						<meta content="zh-cn" http-equiv="Content-Language">
+						<meta content="text/html; charset=gb2312" http-equiv="Content-Type">
+						<center>
+							<script charset="utf-8" language="JavaScript" type="text/javascript">
+								document.write(window.external.gameinfo);
+							</script>
+						</center>
+						<center><hr size="1"></center>
+						<div>
+							<script charset="utf-8" language="JavaScript" type="text/javascript">
+								document.write(window.external.gamedesc);
+							</script>
+						</div>
+					</div>
+		            <ul class="tabs">
+		                <li id="tab1"><a class="current" href="javascript:void(0);">综合</a></li>
+		                <li id="tab2"><a href="javascript:void(0);">新闻</a></li>
+		                <li id="tab3"><a href="javascript:void(0);">活动</a></li>
+		                <li id="tab4"><a href="javascript:void(0);">更新</a></li>
+		            </ul>
+		            <div class="tab_news">                
+		                <div class="newscont" id="newsf" style="display:block;">
+		                    <a class="more" href="javascript:void(0)" onclick="onMore()" target="_self" title="更多">更多</a>
+		                    <ul id="tab_noteices">
+								<!--table border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tbody id="tab_noteices">
+									</tbody>
+								</table-->
+		                    </ul>
+		                </div>
+		                    
+		                <div class="newscont">
+		                    <a class="more" href="javascript:void(0)" onclick="onMore()" target="_self" title="更多">更多</a>
+		                    <ul id="tab_news">
+								<!--table id="tab_news" border="0" cellpadding="0" cellspacing="0" width="100%">
+								</table-->
+							</ul>
+		                </div>
+		                    
+		                <div class="newscont">
+							<a class="more" href="javascript:void(0)" onclick="onMore()" target="_self" title="更多">更多</a>
+		                    <ul id="tab_activities">
+								<!--table border="0" cellpadding="0" cellspacing="0" width="100%">
+								</table-->
+							</ul>
+		                </div>
+		                
+		                <div class="newscont">
+		                	<a class="more" href="javascript:void(0)" onclick="onMore()" target="_self" title="更多">更多</a>
+		                    <ul id="tab_update">
+								<!--table border="0" cellpadding="0" cellspacing="0" width="100%">
+								</table-->
+							</ul>
+		                </div>
+		            </div>
+        		</div>
+			</div>
+
+			<div class="rightbar">
+				<div class="serverlst">
+					<a class="head_btn" href="javascript:void(0)" onclick="window.external.reloadserverlst('onserverlst')" target="_self" title="服务器列表"></a>
+					<div id="serverlstitem">
+					<script charset="utf-8" language="JavaScript" type="text/javascript">
+						window.external.getserverlst('onserverlst');
+					</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--底部通调-->
+<script charset="utf-8" language="JavaScript" type="text/javascript">
+	var shtm = '<script src="';
+	shtm += wwwroot;
+	shtm +='js/jquery-1.7.2.min.js" type="text/javascript"><'+'/script>';
+	shtm += '<script src="';
+	shtm += wwwroot;
+	shtm +='js/common.js" type="text/javascript"><'+'/script>';
+	document.write(shtm);
+	setTimeout('delayfillnews()',3000)
+</script>
+
+<!--统计代码-->
+
+</body>
+</html>
