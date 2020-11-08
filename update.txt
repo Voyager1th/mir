@@ -21,7 +21,7 @@
 		}
 	},
 	"updates":{
-		"ver":8,
+		"ver":9,
 		"info":"https://raw.githubusercontent.com/ononlulu/mir/master/clients.txt",
 		"sha1":"34d8aa96543c030e8add963197c3ca4f3c733802",
 		"path":"https://raw.githubusercontent.com/ononlulu/mir/master/"
